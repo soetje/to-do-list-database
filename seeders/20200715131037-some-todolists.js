@@ -7,21 +7,21 @@ module.exports = {
       [
         {
           name: "Leo's footbal list",
-          // userId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
+          userId: 1,
         },
         {
           name: "Dan's work list",
-          // userId: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
+          userId: 2,
         },
         {
           name: "Dan's personal list",
-          // userId: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
+          userId: 2,
         },
       ],
       {}

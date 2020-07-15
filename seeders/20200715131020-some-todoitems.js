@@ -7,17 +7,19 @@ module.exports = {
       [
         {
           task: "winning championship",
-          // userId: 1,
           deadline: "this year",
+          important: true,
           createdAt: new Date(),
           updatedAt: new Date(),
+          todoListId: 1,
         },
         {
           task: "making new facebook",
-          // userId: 2,
           deadline: "in 10 years",
+          important: true,
           createdAt: new Date(),
           updatedAt: new Date(),
+          todoListId: 2,
         },
       ],
       {}

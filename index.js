@@ -1,11 +1,13 @@
-const express = require("express");
-const User = require("./models").user;
-const app = express();
-const PORT = 4000;
+const express = require("express")
+const app = express()
+const PORT = 4000
 
-app.get("/users", async (req, res) => {
-  const users = await User.findAll();
-  res.send(users);
-});
+const User = require("./models").user
 
-app.listen(PORT, () => console.log(`Server started in port: ${PORT}`));
+app.use(express.json())
+
+app.post("/echo", (req, res) => {
+  res.json(req.body)
+})
+
+app.listen(PORT, () => console.log(`Server started in port: ${PORT}`))
